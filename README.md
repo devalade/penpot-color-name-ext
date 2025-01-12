@@ -34,7 +34,7 @@ pnpm run build
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js  20.11.0+
 - npm
 - Penpot running locally or access to Penpot instance
 
