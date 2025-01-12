@@ -42,31 +42,6 @@
     }
   }
 
-  function simulateColorChange() {
-    const data = [
-      {
-        color: "#495867",
-      },
-      {
-        color: "#577399",
-      },
-      {
-        color: "#b7d7d8",
-      },
-      {
-        color: "#f3ffbd",
-      },
-    ];
-
-    variants.value = data.reduce(
-      (acc, item) => ({
-        ...acc,
-        [item.color]: findContrastVariations(item.color, colorMap, colornames),
-      }),
-      {},
-    );
-  }
-
   async function copyToClipboard(text: string) {
     try {
       await navigator.clipboard.writeText(text);
@@ -122,11 +97,10 @@
 
 <style>
   main {
-    --max-witdh: calc(100vh - 2rem);
+    --max-witdh: calc(100% - 2rem);
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: black;
     padding: 1rem;
     min-height: 100vh;
     gap: 1rem;
