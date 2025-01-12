@@ -7,6 +7,8 @@ export interface ThemePluginEvent {
   content: string;
 }
 
+export type PluginMessageEvent = ThemePluginEvent;
+
 export interface ColorShape {
   color: string;
   opacity: number;
