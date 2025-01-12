@@ -98,6 +98,8 @@
 <style>
   main {
     --max-witdh: calc(100% - 2rem);
+    max-width: var(--max-witdh);
+    width: 100%;
     display: flex;
     flex-direction: column;
     color: white;
