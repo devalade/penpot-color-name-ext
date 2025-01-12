@@ -97,9 +97,9 @@
 
 <style>
   main {
-    --max-witdh: calc(100% - 2rem);
-    max-width: var(--max-witdh);
-    width: 100%;
+    --width: 500px;
+    --max-witdh: var(--width);
+    width: var(--width);
     display: flex;
     flex-direction: column;
     color: white;
