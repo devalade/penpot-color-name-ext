@@ -1,9 +1,12 @@
 {
-  "name": "svelte-example-plugin",
+  "name": "color-name",
+  "description": "A Penpot extension that helps designers instantly identify color names and suggests 4 similar color variants, making color selection effortless.",
+  "author": "devalade",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1",
   "type": "module",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "test": "vitest",
     "dev": "vite build --watch & vite preview",
     "build": "vite build",
@@ -25,5 +28,11 @@
     "@penpot/plugin-types": "^1.0.0",
     "@types/node": "^22.9.1",
     "color-name-list": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
   }
 }

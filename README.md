@@ -18,12 +18,12 @@ git clone https://github.com/devalade/penpot-color-name-ext.git
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 3. Build the extension:
 ```bash
-npm run build
+pnpm run build
 ```
 
 4. Enable developer mode in Penpot settings
@@ -34,7 +34,7 @@ npm run build
 
 ### Prerequisites
 
-- Node.js 16+
+- Node.js 18+
 - npm
 - Penpot running locally or access to Penpot instance
 
@@ -59,7 +59,7 @@ src/
 
 1. Run development server:
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 2. Make changes in `src` directory
