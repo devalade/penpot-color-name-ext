@@ -10,9 +10,9 @@
     // @ts-ignore
     const module = (await import("color-name-list")) as any;
     colornames = module.colornames;
-    if (colornames) {
-      simulateColorChange();
-    }
+    // if (colornames) {
+    //   simulateColorChange();
+    // }
   });
 
   const colorMap = new Map(
@@ -40,6 +40,30 @@
         {},
       );
     }
+  }
+
+  function simulateColorChange() {
+    const data = [
+      {
+        color: "#FF0000",
+        name: "Red",
+      },
+      {
+        color: "#00FF00",
+        name: "Green",
+      },
+      {
+        color: "#0000FF",
+        name: "Blue",
+      },
+    ];
+    variants.value = data.reduce(
+      (acc, item) => ({
+        ...acc,
+        [item.color]: findContrastVariations(item.color, colorMap, colornames),
+      }),
+      {},
+    );
   }
 
   async function copyToClipboard(text: string) {
@@ -97,7 +121,7 @@
 
 <style>
   main {
-    --width: 500px;
+    --width: 100%;
     --max-witdh: var(--width);
     width: var(--width);
     display: flex;
@@ -116,7 +140,9 @@
   }
 
   .color-container {
+    flex: 1;
     max-width: var(--max-witdh);
+    width: 100%;
     margin: 0 auto;
     border-radius: 0.5rem;
     margin-bottom: 0.25rem;
