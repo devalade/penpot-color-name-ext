@@ -9,10 +9,7 @@ const selectShape = (shape: Shape) => {
   penpot.selection = [shape];
 };
 
-penpot.ui.open("Color Name", `?theme=${penpot.theme}`, {
-  width: 500,
-  height: 600,
-});
+penpot.ui.open("Color Name", `?theme=${penpot.theme}`);
 
 penpot.ui.onMessage((message: PluginMessageEvent) => {
   if (message.type === "create-color-shape") {

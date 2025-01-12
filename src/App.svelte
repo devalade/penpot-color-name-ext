@@ -10,9 +10,9 @@
     // @ts-ignore
     const module = (await import("color-name-list")) as any;
     colornames = module.colornames;
-    // if (colornames) {
-    //   simulateColorChange();
-    // }
+    if (colornames) {
+      simulateColorChange();
+    }
   });
 
   const colorMap = new Map(
@@ -140,9 +140,9 @@
   }
 
   .color-container {
-    flex: 1;
     max-width: var(--max-witdh);
     width: 100%;
+    height: fit-content;
     margin: 0 auto;
     border-radius: 0.5rem;
     margin-bottom: 0.25rem;
