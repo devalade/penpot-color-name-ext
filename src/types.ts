@@ -16,7 +16,3 @@ export interface ColorShape {
     shapeId: string;
   }[];
 };
-
-export type PluginMessageEvent = ThemePluginEvent;
-
-
