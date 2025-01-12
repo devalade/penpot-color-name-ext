@@ -75,6 +75,35 @@ We welcome contributions! Please follow these steps:
 3. Make your changes
 4. Submit a pull request
 
+You can use this function to simulate the color name generation:
+
+```ts
+// Copy and paste this function in the App.svelte file
+function simulateColorChange() {
+    const data = [
+      {
+        color: "#FF0000",
+        name: "Red",
+      },
+      {
+        color: "#00FF00",
+        name: "Green",
+      },
+      {
+        color: "#0000FF",
+        name: "Blue",
+      },
+    ];
+    variants.value = data.reduce(
+      (acc, item) => ({
+        ...acc,
+        [item.color]: findContrastVariations(item.color, colorMap, colornames),
+      }),
+      {},
+    );
+  }
+```
+
 ### Code Style
 
 - Use TypeScript
