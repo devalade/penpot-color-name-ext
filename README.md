@@ -1,4 +1,4 @@
-#Penpot Color Name Extension
+# Penpot Color Name Extension
 
 A Penpot extension that helps designers instantly identify color names and suggests 4 similar color variants, making color selection effortless.
 
@@ -35,7 +35,7 @@ pnpm run build
 ### Prerequisites
 
 - Node.js  20.11.0+
-- npm
+- pnpm
 - Penpot running locally or access to Penpot instance
 
 ### Project Structure
@@ -77,22 +77,15 @@ We welcome contributions! Please follow these steps:
 
 You can use this function to simulate the color name generation - be sure to uncomment the function simulateColorChange in the onMount function in App.svelte
 
-### Code Style
-
-- Use TypeScript
-- Follow Svelte best practices
-- Write unit tests for new features
-- Update documentation as needed
-
 ## License
 
-MIT License - see LICENSE file for details
+MIT License
 
 ## Contact
 
 - Create an issue for bug reports
 - Submit PRs for contributions
-- Join our Discord community
+- Shoot me a message on [@dev_alade](https://x.com/dev_alade)
 
 ## Acknowledgments
 
@@ -101,7 +94,5 @@ MIT License - see LICENSE file for details
 - Svelte team for v5 improvements
 
 ---
-
-Follow [@dev_alade](https://x.com/dev_alade) for updates.
 
 Built with ❤️ by devalade
