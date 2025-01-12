@@ -21,14 +21,10 @@ git clone https://github.com/devalade/penpot-color-name-ext.git
 pnpm install
 ```
 
-3. Build the extension:
+3. Preview:
 ```bash
-pnpm run build
+pnpm run dev
 ```
-
-4. Enable developer mode in Penpot settings
-
-5. Load the extension from the dist folder
 
 ## Development
 
