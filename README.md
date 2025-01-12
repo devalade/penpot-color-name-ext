@@ -45,6 +45,10 @@ src/
   ├── assets/
   │   ├── main.css
   │   └── penpot.css
+  ├── lib/
+  │   ├── color-utils.ts
+  │   ├── color-utils.test.ts
+  │   └── types.ts
   ├── App.svelte
   ├── plugin.svelte
   ├── types.svelte
