@@ -10,9 +10,9 @@
     // @ts-ignore
     const module = (await import("color-name-list")) as any;
     colornames = module.colornames;
-    if (colornames) {
-      simulateColorChange();
-    }
+    // if (colornames) {
+    //   simulateColorChange();
+    // }
   });
 
   const colorMap = new Map(
@@ -45,18 +45,19 @@
   function simulateColorChange() {
     const data = [
       {
-        color: "#FF0000",
-        name: "Red",
+        color: "#495867",
       },
       {
-        color: "#00FF00",
-        name: "Green",
+        color: "#577399",
       },
       {
-        color: "#0000FF",
-        name: "Blue",
+        color: "#b7d7d8",
+      },
+      {
+        color: "#f3ffbd",
       },
     ];
+
     variants.value = data.reduce(
       (acc, item) => ({
         ...acc,
