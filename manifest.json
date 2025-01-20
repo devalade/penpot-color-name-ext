@@ -1,0 +1,13 @@
+{
+  "name": "Color Name",
+  "description": "A Penpot extension that helps designers instantly identify color names and suggests 4 similar color variants, making color selection effortless.",
+  "code": "/plugin.js",
+  "icon": "/icon.png",
+  "permissions": [
+    "page:read",
+    "content:read",
+    "content:write",
+    "file:read",
+    "selection:read"
+  ]
+}
